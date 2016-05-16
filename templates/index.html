@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+html, body {
+  height: 100%;
+  width: 95%;   
+  margin:auto;
+  font-family: Sans-Serif;
+  text-align: center 
+}
+h1 {
+}
+input[type=date]{
+  height:20px;
+  width:190px;
+  font-size:20px;
+}
+input[type=time]{
+  height:20px;
+  width:130px;
+  font-size:20px;
+}
+
+input[type=text] {
+    height:30px;
+    width:45px;
+    font-size:24px;
+}
+input[name=phone_last]{
+  height:30px;
+    width:60px;
+}
+input[type=submit]{
+  background-image: url("images/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: url("images/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: url("images/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: url("images/bg.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  -moz-transition: background-color .2s ease-in-out;
+  -webkit-transition: background-color .2s ease-in-out;
+  -ms-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+  -webkit-appearance: none; 
+  position: relative;
+  display: inline-block;
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 700;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 0px;
+  overflow: hidden;
+  background-color: #6E83E0;
+  height:60px;
+    width:90%;
+    font-size:24px;
+}
+
+input[type="submit"]:hover{
+  background-color: #43bff0;
+  color: #fff;
+}
+
+form {
+  font-size:35px;
+  margin:auto;
+  display: inline-block;
+}
+
+  </style>
+
+  <title>Wake Up Call!</title>
+</head>
+
+<body>
+<h1>Wake up with a phone call!</h1>
+<p>Enter phone number and desired call time, and we will give you a personalized wake up call!</p>
+<br>
+<form action="" method="post"> 
+	(<input placeholder="202" type="text" name="area_code" maxlength="3" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>)
+	<input placeholder="345" type="text" name="phone_middle" maxlength="3" onkeypress='return event.charCode >= 48 && event.charCode <= 57'> - 
+	<input placeholder="6789" type="text" name="phone_last" maxlength="4" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+  <br>
+	<input type="date" name="date">
+	<input type="time" name="time">
+	<select name="zone">
+    	<option value="ET">ET</option>
+    	<option value="CT">CT</option>
+    	<option value="MT">MT</option>
+    	<option value="PT">PT</option>
+  	</select>
+    <br><br>
+  	<input type="submit">
+  </form>
+
+
+
+
+</body>
+</html>
