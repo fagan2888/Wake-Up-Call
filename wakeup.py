@@ -4,8 +4,8 @@ from datetime import datetime, timedelta
 import plivo, plivoxml
 
 app = Flask(__name__)
-auth_id = "MAMJCXYTDMNZQ4MZHKNW"
-auth_token = "NTkxZmJkYmI0NGExZjk3ZGMzNzU0YTgzZjA5NTBm"
+auth_id = "AUTH_ID"
+auth_token = "AUTH_TOKEN"
 
 def alarm(number):
     p = plivo.RestAPI(auth_id, auth_token)
